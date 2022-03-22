@@ -1,1 +1,1 @@
-web: waitress-serve --listen=*:8000 charts.wsgi:application
+web: gunicorn charts.wsgi
