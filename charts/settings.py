@@ -83,16 +83,15 @@ WSGI_APPLICATION = 'charts.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'project',
-		'USER' : 'root',
-		'PASSWORD' : '1234',
-		'HOST' : 'localhost',
-		'PORT' : '3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'damatvm0epno7g',
+		'USER' : 'dxegfmuzulshsu',
+		'PASSWORD' : '8b3394af4b945b4f3560ea97dec54a76b724dd29fd7f0333a5ee3a6ea2479b78',
+		'HOST' : 'ec2-34-224-226-38.compute-1.amazonaws.com',
+		'PORT' : '5432',
 
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
