@@ -5,6 +5,11 @@ from django.apps import apps
 IGNORED_NAMES = ["LogEntry", "Permission", "Group", "User", "ContentType", "Session"]
 rows = 10
 
+
+@api_view(['GET'])
+def test(request):
+	return Response("hello")
+
 @api_view(['GET'])
 def getTableData(request, name):
 	model = apps.get_model('api', name)

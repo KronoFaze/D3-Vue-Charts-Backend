@@ -4,4 +4,5 @@ from . import views
 urlpatterns = [
     path('tables/', views.getTableNames),
     path('tables/<str:name>/', views.getTableData),
+    path('test/', views.test),
 ]
