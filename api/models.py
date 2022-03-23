@@ -56,3 +56,21 @@ class SalesSerializer(serializers.ModelSerializer):
 		model = Sales
 		fields = "__all__" 
 
+class Employee(models.Model):
+	name = models.CharField(max_length=50)
+	age = models.IntegerField()  
+	dob = models.DateField()
+	salary = models.IntegerField()  
+	country = models.CharField(max_length=50)
+	city = models.CharField(max_length=50)
+
+	def serialize(self):
+		serializer = EmployeeSerializer(data=self, many=True)
+		if serializer.is_valid():
+			return serializer
+		return serializer.errors
+
+class EmployeeSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = Employee
+		fields = "__all__" 
