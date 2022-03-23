@@ -3,7 +3,7 @@ from rest_framework import serializers
 
 class Dummy(models.Model):
 
-	date = models.DateField(db_column='Date', blank=True, null=True, serialize=True)
+	date = models.DateField(db_column='Date', blank=True, null=True)
 	month = models.CharField(db_column='Month', max_length=3, blank=True, null=True)
 	district_name = models.CharField(db_column='District_name', max_length=16, blank=True, null=True)
 	sales = models.IntegerField(db_column='Sales', blank=True, null=True)  
@@ -38,3 +38,21 @@ class StudentSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Student
 		fields = "__all__" 
+
+class Sales(models.Model):
+	date = models.DateField()
+	month = models.CharField(max_length=3)
+	district_name = models.CharField(max_length=16)
+	sales = models.IntegerField()  
+
+	def serialize(self):
+		serializer = SalesSerializer(data=self, many=True)
+		if serializer.is_valid():
+			return serializer
+		return serializer.errors
+
+class SalesSerializer(serializers.ModelSerializer):
+	class Meta:
+		model = Sales
+		fields = "__all__" 
+

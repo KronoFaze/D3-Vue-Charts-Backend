@@ -25,7 +25,7 @@ def getTableNames(request):
 @api_view(['POST'])
 def postTableData(request, name):
 	model = apps.get_model('api', name)
-	serializer = model.serialize([request.data])
+	serializer = model.serialize(request.data)
 	# print(request.data)
 	# print(serializer)
 	# serializer.save()
