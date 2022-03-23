@@ -15,7 +15,8 @@ class Dummy(models.Model):
 	def serialize(self):
 		serializer = DummySerializer(data=self, many=True)
 		if serializer.is_valid():
-			return serializer.data
+			return serializer
+		return serializer.errors
 
 class DummySerializer(serializers.ModelSerializer):
 	class Meta:
@@ -30,7 +31,8 @@ class Student(models.Model):
 	def serialize(self):
 		serializer = StudentSerializer(data=self, many=True)
 		if serializer.is_valid():
-			return serializer.data
+			return serializer
+		return serializer.errors
 
 class StudentSerializer(serializers.ModelSerializer):
 	class Meta:

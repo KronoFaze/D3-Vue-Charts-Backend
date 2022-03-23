@@ -93,6 +93,9 @@ DATABASES = {
     }
 }
 
+# postgres://mqpsqdcn:8GuFjk-tAid3vgFScW6YHKOrND4RFurf@balarama.db.elephantsql.com/mqpsqdcn
+# postgres://dxegfmuzulshsu:8b3394af4b945b4f3560ea97dec54a76b724dd29fd7f0333a5ee3a6ea2479b78@ec2-34-224-226-38.compute-1.amazonaws.com:5432/damatvm0epno7g
+
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
