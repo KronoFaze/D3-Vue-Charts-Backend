@@ -2,8 +2,8 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from django.apps import apps
 
-IGNORED_NAMES = ["LogEntry", "Permission", "Group", "User", "ContentType", "Session"]
-rows = 10
+IGNORED_NAMES = ["LogEntry", "Permission", "Group", "User", "ContentType", "Session", "Dummy"]
+rows = 20
 
 
 @api_view(['GET'])
