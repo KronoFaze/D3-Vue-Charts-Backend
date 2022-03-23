@@ -3,7 +3,7 @@ from rest_framework.decorators import api_view
 from django.apps import apps
 
 IGNORED_NAMES = ["LogEntry", "Permission", "Group", "User", "ContentType", "Session", "Dummy"]
-rows = 20
+rows = 10
 
 
 @api_view(['GET'])
