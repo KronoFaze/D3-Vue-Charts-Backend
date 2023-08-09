@@ -83,15 +83,17 @@ WSGI_APPLICATION = 'charts.wsgi.application'
 
 DATABASES = {
   'default': {
-    'ENGINE': 'django.db.backends.sqlite3',
-    'NAME': BASE_DIR / 'db.sqlite3',
-    # 'USER': 'postgres',
-    # 'PASSWORD': 'gq9PsYIdsJ6Vbv1W',
-    # 'HOST': 'db.vbkocmnsjhymqiveetai.supabase.co',
-    # 'PORT': '5432',
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'verceldb',
+    'USER': 'default',
+    'PASSWORD': 'SjlkwmD8r3XM',
+    'HOST': 'ep-square-rice-11669032.ap-southeast-1.postgres.vercel-storage.com',
+    'PORT': '5432',
   }
 }
 
+
+# psql "postgres://default:SjlkwmD8r3XM@ep-square-rice-11669032.ap-southeast-1.postgres.vercel-storage.com:5432/verceldb"
 # gq9PsYIdsJ6Vbv1W
 # postgres://kronofaze:y2FLnOj9XsDd@ep-lingering-surf-13062589.ap-southeast-1.aws.neon.tech/neondb
 
