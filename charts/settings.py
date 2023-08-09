@@ -83,12 +83,12 @@ WSGI_APPLICATION = 'charts.wsgi.application'
 
 DATABASES = {
   'default': {
-    'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'postgres',
-    'USER': 'postgres',
-    'PASSWORD': 'gq9PsYIdsJ6Vbv1W',
-    'HOST': 'db.vbkocmnsjhymqiveetai.supabase.co',
-    'PORT': '5432',
+    'ENGINE': 'django.db.backends.sqlite3',
+    'NAME': BASE_DIR / 'db.sqlite3',
+    # 'USER': 'postgres',
+    # 'PASSWORD': 'gq9PsYIdsJ6Vbv1W',
+    # 'HOST': 'db.vbkocmnsjhymqiveetai.supabase.co',
+    # 'PORT': '5432',
   }
 }
 
