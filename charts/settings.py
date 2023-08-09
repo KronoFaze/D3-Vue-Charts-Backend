@@ -82,16 +82,17 @@ WSGI_APPLICATION = 'charts.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-		# 'USER' : 'dxegfmuzulshsu',
-		# 'PASSWORD' : '8b3394af4b945b4f3560ea97dec54a76b724dd29fd7f0333a5ee3a6ea2479b78',
-		# 'HOST' : 'ec2-34-224-226-38.compute-1.amazonaws.com',
-		# 'PORT' : '5432',
-
-    }
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'neondb',
+    'USER': 'kronofaze',
+    'PASSWORD': 'y2FLnOj9XsDd',
+    'HOST': 'ep-lingering-surf-13062589.ap-southeast-1.aws.neon.tech',
+    'PORT': '5432',
+  }
 }
+
+# postgres://kronofaze:y2FLnOj9XsDd@ep-lingering-surf-13062589.ap-southeast-1.aws.neon.tech/neondb
 
 # postgres://mqpsqdcn:8GuFjk-tAid3vgFScW6YHKOrND4RFurf@balarama.db.elephantsql.com/mqpsqdcn
 # postgres://dxegfmuzulshsu:8b3394af4b945b4f3560ea97dec54a76b724dd29fd7f0333a5ee3a6ea2479b78@ec2-34-224-226-38.compute-1.amazonaws.com:5432/damatvm0epno7g
