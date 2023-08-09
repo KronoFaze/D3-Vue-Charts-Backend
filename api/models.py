@@ -25,7 +25,7 @@ class DummySerializer(serializers.ModelSerializer):
 
 class Student(models.Model):
 	name = models.CharField(max_length=20)
-	dob = models.DateField()
+	# dob = models.DateField()
 	marks = models.IntegerField()
 
 	def serialize(self):
@@ -59,7 +59,7 @@ class SalesSerializer(serializers.ModelSerializer):
 class Employee(models.Model):
 	name = models.CharField(max_length=50)
 	age = models.IntegerField()  
-	dob = models.DateField()
+	# dob = models.DateField()
 	salary = models.IntegerField()  
 	country = models.CharField(max_length=50)
 	city = models.CharField(max_length=50)
