@@ -84,14 +84,15 @@ WSGI_APPLICATION = 'charts.wsgi.application'
 DATABASES = {
   'default': {
     'ENGINE': 'django.db.backends.postgresql',
-    'NAME': 'neondb',
-    'USER': 'kronofaze',
-    'PASSWORD': 'y2FLnOj9XsDd',
-    'HOST': 'ep-lingering-surf-13062589.ap-southeast-1.aws.neon.tech',
+    'NAME': 'postgres',
+    'USER': 'postgres',
+    'PASSWORD': 'gq9PsYIdsJ6Vbv1W',
+    'HOST': 'db.vbkocmnsjhymqiveetai.supabase.co',
     'PORT': '5432',
   }
 }
 
+# gq9PsYIdsJ6Vbv1W
 # postgres://kronofaze:y2FLnOj9XsDd@ep-lingering-surf-13062589.ap-southeast-1.aws.neon.tech/neondb
 
 # postgres://mqpsqdcn:8GuFjk-tAid3vgFScW6YHKOrND4RFurf@balarama.db.elephantsql.com/mqpsqdcn
