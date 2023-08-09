@@ -2,7 +2,7 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from django.apps import apps
 
-IGNORED_NAMES = ["LogEntry", "Permission", "Group", "User", "ContentType", "Session", "Dummy"]
+IGNORED_NAMES = ["LogEntry", "Permission", "Group", "User", "ContentType", "Session", "Dummy", "Sales"]
 rows = 10
 
 
